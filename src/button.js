@@ -4,8 +4,10 @@
  * @param {string} buttonName
  * @returns {Element}
  */
-const makeButton = buttonName => {
+const makeButton = (buttonName) => {
   return `Button: ${buttonName}`;
 };
 
-export default makeButton
+// export default makeButton;
+
+module.exports = makeButton;

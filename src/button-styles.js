@@ -1,5 +1,17 @@
 const red = "color: red;";
 const blue = "color: blue;";
-const makeColorStyle = color => `color: ${color};`;
+const makeColorStyle = (color) => `color: ${color};`;
 
-export {red, blue, makeColorStyle}
+// Using ES5 module syntax doesn't provide Tree shaking benefits
+// module.exports = {
+//   red,
+//   blue,
+//   makeColorStyle,
+// };
+// export default makeColorStyle;
+
+// exports.red = red;
+// exports.blue = blue;
+// exports.makeColorStyle = makeColorStyle;
+
+export { red, blue, makeColorStyle };
