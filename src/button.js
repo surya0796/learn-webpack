@@ -4,8 +4,11 @@
  * @param {string} buttonName
  * @returns {Element}
  */
+
 const makeButton = (buttonName) => {
-  return `Button: ${buttonName}`;
+  const ele = document.createElement("button");
+  ele.textContent = buttonName;
+  return ele;
 };
 
 // export default makeButton;
