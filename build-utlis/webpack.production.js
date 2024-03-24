@@ -1,4 +1,8 @@
 module.exports = (mode) => {
   console.log(mode);
-  return {};
+  return {
+    output: {
+      filename: "[chunkhash].js",
+    },
+  };
 };
