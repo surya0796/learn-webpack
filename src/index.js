@@ -1,5 +1,6 @@
 import nav from "./nav";
-import { top, bottom } from "./footer";
+import footer from "./footer";
+
 import makeButton from "./button";
 import { makeColorStyle } from "./button-styles";
 // const button = require("./button"); // CommonJS is also working
@@ -16,3 +17,4 @@ const body = document.body;
 const button = makeButton("button rendered by webpack");
 button.style = makeColorStyle("red");
 body.appendChild(button);
+body.appendChild(footer());

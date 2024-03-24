@@ -1,4 +1,12 @@
 module.exports = (mode) => {
-  console.log(mode);
-  return {};
+  return {
+    module: {
+      rules: [
+        {
+          test: /\.css/,
+          use: ["style-loader", "css-loader"],
+        },
+      ],
+    },
+  };
 };
